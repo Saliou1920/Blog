@@ -17,13 +17,15 @@ This is a simple weather app built using goweather API. -->
 
 ### Screenshot 💻
 
-<p align="center">
+<div align="center">
+<p align="center" style="width:60%;">
   <img src="assets/images/image1.png" alt="App"/>
 </p>
 
-<p align="center">
+<p align="center" style="width:60%;">
   <img src="assets/images/image2.png" alt="App"/>
 </p>
+</div>
 
 ### Built with 🧰
 
