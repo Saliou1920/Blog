@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+.anime{
+    font-family: 'Corinthia', cursive;
+    height: 100%;
+    font-weight: 800;
+    animation: myAnim 3s ease-in-out 0s 1 normal forwards running;
+}
+
+@keyframes myAnim{
+    0%,
+    50%,
+    100%{
+        opacity: 1;
+    }
+
+    25%,
+    75%{
+        opacity: 0;
+    }
+}
