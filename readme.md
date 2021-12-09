@@ -31,10 +31,8 @@ This is a simple weather app built using goweather API. -->
 
 - PHP 
 - CodeIgniter 4
-- Semantic HTML5 markup
-- CSS custom properties
-- Javascript
-- Goweather API
+- MYSQL
+- HTML & CSS
 
 ## Author
 
