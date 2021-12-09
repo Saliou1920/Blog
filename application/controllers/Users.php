@@ -10,13 +10,18 @@ class Users extends CI_Controller {
     }
 	
 	public function create(){
-
-        // $data['title'] = 'Create a new user';
-
+        $this->load->helper('form');
+        $this->load->library('form_validation');
         $this->form_validation->set_rules('name', 'Name', 'required');
-        $this->form_validation->set_rules('email', 'Email', 'required');
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]', 
+                                        array('is_unique' => 'This %s already exists.',
+                                            'required' => 'You must provide a %s.')
+                                        );  
+        $this->form_validation->set_rules('username', 'Username', 'required|is_unique[users.username]', 
+                                        array('is_unique' => 'This %s already exists.',
+                                              'required' => 'You must provide a %s.')
+                                    );
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]');
 
         if ($this->form_validation->run() === FALSE)
         {

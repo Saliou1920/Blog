@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- importer notre style css -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/animation.css">
 
+    <style>
+            
+      div + i {
+          font-size: 1.5rem;
+          color: #fff;
+          margin-right: 0.5rem;
+      }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
