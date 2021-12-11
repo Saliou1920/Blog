@@ -66,6 +66,9 @@ class Users extends CI_Controller {
     {
         $this->load->helper('form');
         $this->load->library('form_validation');
+
+        $data['title'] = 'Edit a user';
+
         $this->form_validation->set_rules('name', 'Name', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('username', 'Username', 'required');
@@ -96,8 +99,6 @@ class Users extends CI_Controller {
     public function delete($id)
     {
         $this->user_model->delete_user($id);
-        $this->load->view('templates/header');
-        $this->load->view('users/success');
-        $this->load->view('templates/footer');
+        redirect('users');
     }
 }
