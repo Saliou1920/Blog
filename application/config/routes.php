@@ -61,8 +61,11 @@ $route['posts/(:any)'] = 'posts/view/$1';
 $route['posts'] = 'posts/index';
 
 // user
+$route['users/index']  = 'users/index';
 $route['users/create'] = 'users/create';
-$route['users/success'] = 'users/success';
+$route['users/update'] = 'users/update';
+$route['users/(:any)'] = 'users/view/$1';
+$route['users'] = 'users/index';
 
 /*
 ** default_controller
