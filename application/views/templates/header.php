@@ -48,6 +48,7 @@
               <div class="dropdown-menu" aria-labelledby="download">
                 <a class="dropdown-item" rel="noopener" href="<?= base_url().'posts/create'; ?>">Create a Post</a>
                 <a class="dropdown-item" rel="noopener" href="<?= base_url().'users/create'; ?>">Create a User</a>
+                <a class="dropdown-item" rel="noopener" href="<?= base_url().'users/'; ?>">Users</a>
               </div>
             </li>
           </ul>
