@@ -8,7 +8,14 @@ class Users extends CI_Controller {
         parent::__construct();
         $this->load->model('user_model');
     }
-	
+	public function index()
+    {
+        $data['title'] = 'Users';
+        $data['users'] = $this->user_model->get_users();
+        $this->load->view('templates/header');
+        $this->load->view('users/index', $data);
+        $this->load->view('templates/footer');
+    }
 	public function create(){
         $this->load->helper('form');
         $this->load->library('form_validation');
