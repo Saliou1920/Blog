@@ -18,10 +18,12 @@
 
     <style>
             
-      div + i {
-          font-size: 1.5rem;
-          color: #fff;
-          margin-right: 0.5rem;
+      p {
+          margin-bottom: 0 !important;
+      }
+        
+      .form-outline p {
+          color: red;
       }
     </style>
 </head>
