@@ -31,6 +31,9 @@
             </tbody>
         </table>
     </div>
+    <div class=" d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" style="padding: 10px 15px;" onclick="window.location.href='<?php echo site_url('users/create'); ?>'">Add User</button>
+    </div>
 </div>
 <!-- end loop -->
 
